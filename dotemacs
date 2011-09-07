@@ -1,0 +1,23 @@
+
+(defun window-nt-special ()
+  (message "load windows-nt special conf")
+  (load (concat current-dir "emacs-rc-win")))
+
+(defun platform-special ()
+  (cond ((eq system-type 'windows-nt)
+         (window-nt-special))))
+  
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; load predefined
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(message "Loading my emacs conf START")
+
+(defvar current-dir (file-name-directory load-file-name))
+(add-to-list 'load-path (concat current-dir "twittering-mode-cn"))
+(load (concat current-dir "haskellmode-emacs/haskell-site-file"))
+(load (concat current-dir "emacs-rc"))
+(load (concat current-dir "emacs-rc-ext"))
+(platform-special)
+
+(message "Loading my emacs conf DONE")
+

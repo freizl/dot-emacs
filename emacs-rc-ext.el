@@ -1,4 +1,3 @@
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; twittering mode
 ;;;; https://github.com/xwl/twittering-mode.git

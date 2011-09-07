@@ -1,0 +1,3 @@
+[submodule "twittering-mode-cn"]
+	path = twittering-mode-cn
+	url = https://github.com/xwl/twittering-mode.git

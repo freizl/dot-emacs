@@ -1,1 +1,9 @@
 my .emacs configuration
+
+* TODO
+  1. [X] Elegant separate config for win/linux
+   - define var for path config
+   - if var defined, then load...
+  2. [X]  put all depends into this dir;
+          load those dpends via relative path rather than absolute path
+  3. [ ] 
