@@ -1,0 +1,6 @@
+1. Elegant separate config for win/linux
+   - define var for path config
+   - if var defined, then load...
+
+2. put all depends into this dir;
+   load those depends via relative path rather than absolute path
