@@ -22,5 +22,19 @@
 (load (concat src-dir "emacs-rc-ext"))
 (platform-special)
 
+;;; add to emacs-ext then rename to emacs-programming
+(add-to-list 'load-path depends-dir)
+
+(autoload 'js2-mode "js2" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(require 'flymake-cursor)             ;;; TODO: more about flymake??
+
+;(add-hook 'js-mode-hook
+;          (lambda ()
+;            ;; Scan the file for nested code blocks
+;            (imenu-add-menubar-index)
+;            ;; Activate the folding mode
+;            (hs-minor-mode t)))
+
 (message "Loading my emacs conf DONE")
 
