@@ -16,7 +16,6 @@
 (defvar src-dir (concat current-dir "src/"))
 (defvar depends-dir (concat current-dir "depends/"))
 
-(add-to-list 'load-path (concat depends-dir "twittering-mode-cn"))
 (load (concat depends-dir "haskellmode-emacs/haskell-site-file"))
 (load (concat src-dir "emacs-rc"))
 (load (concat src-dir "emacs-rc-ext"))
