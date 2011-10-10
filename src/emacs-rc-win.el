@@ -19,7 +19,12 @@
 (setq tramp-default-method "plink")
 (setq tramp-auto-save-directory "c:\\temp\\tramp")
 (setq tramp-default-user "root")
-;;(add-to-list 'tramp-default-method-alist '("" "john" "ssh"))
-;;(add-to-list tramp-default-proxies-alist '(".*" "\`root\'" "/ssh:%h:"))
+
+;;; open remote home via /ssh::~
+;(setq tramp-default-user "swu"
+;     tramp-default-host "dev-01.com")
+
+;;; altertive approach as /$c3dev~
+;(setenv "c3dev" "/ssh:swu@dev-01.com:")
 
 (shell)
