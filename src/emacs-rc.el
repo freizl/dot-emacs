@@ -26,7 +26,7 @@
  '(tool-bar-mode nil)
  '(transient-mark-mode t)
  '(inhibit-startup-screen t)
- '(split-width-threshold nil)         ;; old emacs style split
+; '(split-width-threshold nil)         ;; old emacs style split
  '(dired-listing-switches' "-l")
  '(delete-by-moving-to-trash t)
  '(org-log-done (quote time))
@@ -125,5 +125,14 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (add-to-list 'auto-mode-alist '("\\.as$" . c-mode))
 (add-to-list 'auto-mode-alist '("README" . text-mode))
+(add-to-list 'auto-mode-alist '("\\.xml$" . nxml-mode))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; Color
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'color-theme)
+(setq color-theme-is-global t)
+;(color-theme-robin-hood)
+(color-theme-dark-laptop)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
