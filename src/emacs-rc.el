@@ -31,7 +31,10 @@
  '(delete-by-moving-to-trash t)
  '(org-log-done (quote time))
  '(org-special-ctrl-a/e t)
- '(kill-whole-line t))
+ '(kill-whole-line t)
+ '(mouse-drag-copy-region nil)  ; stops selection with a mouse being immediately injected to the kill ring
+ '(x-select-enable-primary nil)  ; stops killing/yanking interacting with primary X11 selection
+ '(x-select-enable-clipboard t))  ; makes killing/yanking interact with clipboard X11 selection
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; miscs
