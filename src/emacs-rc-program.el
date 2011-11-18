@@ -13,6 +13,10 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'haskell-mode)
 (require 'inf-haskell)
+(require 'hs-lint)
+(defun my-haskell-mode-hook ()
+   (local-set-key "\C-cl" 'hs-lint))
+(add-hook 'haskell-mode-hook 'my-haskell-mode-hook)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
@@ -38,3 +42,6 @@
 ;            (hs-minor-mode t)))
 
 (require 'flymake-cursor)             ;;; TODO: more about flymake??
+
+;;; PHP
+(require 'php-mode)

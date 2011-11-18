@@ -26,6 +26,11 @@
      (interactive "p")
      (message "Hello Hangzhou.. %d" number))
 
+(defun hello2 (cmd, buffer)
+     "Hello World and you can call it via M-x hello."
+     (interactive "saction:\nbfile")
+     (message "Hello Hangzhou.. %s,%s" cmd buffer))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; deploy properties switch
 (defun prop-switch (number)
