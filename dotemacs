@@ -13,7 +13,7 @@
 (message "Loading my emacs conf START")
 
 (defvar current-dir (file-name-directory load-file-name))
-(defvar src-dir (concat current-dir "src/"))
+(defvar src-dir     (concat current-dir "src/"))
 (defvar depends-dir (concat current-dir "depends/"))
 
 (add-to-list 'load-path depends-dir)

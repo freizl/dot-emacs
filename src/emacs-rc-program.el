@@ -41,7 +41,20 @@
 ;            ;; Activate the folding mode
 ;            (hs-minor-mode t)))
 
-(require 'flymake-cursor)             ;;; TODO: more about flymake??
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; graphviz
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(load-file (concat depends-dir "graphviz-dot-mode.el"))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; flymake
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; FIXME: more about config
+(require 'flymake-cursor)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; PHP
-(require 'php-mode)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;(require 'php-mode)
+
+(message src-dir)
