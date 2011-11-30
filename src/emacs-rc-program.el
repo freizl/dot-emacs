@@ -5,6 +5,7 @@
 (autoload 'tidy-parse-config-file "tidy" "Parse the `tidy-config-file'" t)
 (autoload 'tidy-save-settings "tidy" "Save settings to `tidy-config-file'" t)
 (autoload 'tidy-build-menu  "tidy" "Install an options menu for HTML Tidy." t)
+;;; TODO more for nxml-hook in order to print any xml files
 (add-hook 'nxml-mode-hook 'tidy-build-menu)
 (add-hook 'html-mode-hook 'tidy-build-menu)
 
