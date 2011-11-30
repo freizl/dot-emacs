@@ -11,6 +11,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; haskell mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(load (concat depends-dir "haskellmode-emacs/haskell-site-file"))
 (require 'haskell-mode)
 (require 'inf-haskell)
 (require 'hs-lint)

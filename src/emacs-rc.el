@@ -109,14 +109,6 @@
       ["子" "丑" "寅" "卯" "辰" "巳" "午" "未" "申" "酉" "戌" "亥"])
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; Org-Mode Setting
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;(setq org-agenda-files (quote ("c:/workspace/apps/mygit/orgs/")))
-(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-(global-set-key "\C-ca" 'org-agenda)
-(add-hook 'org-mode-hook 'turn-on-auto-fill)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Auto-run / hooks
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Fix sth. for shell at Linux
