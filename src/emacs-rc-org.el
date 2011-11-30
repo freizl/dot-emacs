@@ -19,27 +19,27 @@
 (setq org-export-docbook-xslt-proc-command "xsltproc --output %s /usr/share/xml/docbook/stylesheet/nwalsh/fo/docbook.xsl %s")
 ;;; Inline images in HTML instead of producting links to the image
 (setq org-export-html-inline-images t)
-                                        ; Do not use sub or superscripts - I currently don't need this functionality in my documents
+;;; Do not use sub or superscripts - I currently don't need this functionality in my documents
 (setq org-export-with-sub-superscripts nil)
 
 (setq org-export-html-style-include-default nil)
-                                        ; Do not generate internal css formatting for HTML exports
+;;; Do not generate internal css formatting for HTML exports
 (setq org-export-htmlize-output-type (quote css))
-                                        ; Export with LaTeX fragments
+;;; Export with LaTeX fragments
 (setq org-export-with-LaTeX-fragments t)
 
+;;;:publishing-directory "/ssh:www-data@www:~/www.norang.ca/htdocs/tmp"
 (setq org-publish-project-alist
       '(("org-doc-base"
          :base-directory "~/.emacs.d/orgdoc/"
-                                        ;:publishing-directory "/ssh:www-data@www:~/www.norang.ca/htdocs/tmp"
          :publishing-directory "~/.emacs.d/public/orgdoc"
-         :recursive nil
+         :recursive t
          :base-extension "org"
          :html-preamble t
          :table-of-contents nil
          :section-numbers nil
          :link-home "index.html"
-;         :infojs-opt "toc:t ltoc:t mouse:underline  path:http://orgmode.org/org-info.js"
+         ;;;:infojs-opt "toc:t ltoc:t mouse:underline  path:http://orgmode.org/org-info.js"
          :publishing-function org-publish-org-to-html
          :publishing-function (org-publish-org-to-html org-publish-org-to-org)
          :style-include-default nil
@@ -48,10 +48,10 @@
          :sitemap-filename "index.html"
          :sitemap-title "Haisheng Docs"
          :sitemap-style "tree"
+         :author nil
          )
         ("org-doc-extra"
          :base-directory "~/.emacs.d/orgdoc/"
-                                        ;:publishing-directory "/ssh:www-data@www:~/www.norang.ca/htdocs/tmp"
          :publishing-directory "~/.emacs.d/public/orgdoc"
          :base-extension "css\\|pdf\\|png\\|jpg\\|gif"
          :publishing-function org-publish-attachment
@@ -59,6 +59,33 @@
          :author nil)
         ("org-doc"
          :components ("org-doc-base" "org-doc-extra"))
+        ("daily-base"
+         :base-directory "~/haskell/haisheng-homepage/daily/"
+         :publishing-directory "~/.emacs.d/public/daily/"
+         :recursive t
+         :base-extension "org"
+         :html-preamble t
+         :table-of-contents nil
+         :section-numbers nil
+         :link-home "index.html"
+         :publishing-function org-publish-org-to-html
+         :publishing-function (org-publish-org-to-html org-publish-org-to-org)
+         :style-include-default nil
+         :style "<link rel=\"stylesheet\" href=\"css/default.css\" type=\"text/css\"/>"
+         :auto-sitemap t
+         :sitemap-filename "index.html"
+         :sitemap-title "Haisheng Daily"
+         :sitemap-style "tree"
+         )
+        ("daily-extra"
+         :base-directory "~/.emacs.d/orgdoc/"
+         :publishing-directory "~/.emacs.d/public/daily"
+         :base-extension "css\\|pdf\\|png\\|jpg\\|gif"
+         :publishing-function org-publish-attachment
+         :recursive t
+         :author nil)
+        ("daily"
+         :components ("daily-base" "daily-extra"))
         ))
 
 (setq org-ditaa-jar-path "/home/simon/.emacs.d/org-7.7/contrib/scripts/ditaa.jar")
