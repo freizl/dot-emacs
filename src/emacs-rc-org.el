@@ -2,11 +2,8 @@
 ;;;; Org-Mode Setting
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;(add-to-list 'load-path (cons "/home/simon/.emacs.d/org-7.7/lisp" load-path))
-;(setq load-path (cons "/home/simon/.emacs.d/org-7.7/contrib/lisp" load-path))
-
-(add-to-list 'load-path "/home/simon/.emacs.d/org-7.7/lisp")
-(add-to-list 'load-path "/home/simon/.emacs.d/org-7.7/contrib/lisp")
+(add-to-list 'load-path "~/.emacs.d/org-7.7/lisp")
+(add-to-list 'load-path "~/.emacs.d/org-7.7/contrib/lisp")
 
 (require 'org-install)
 
@@ -25,7 +22,6 @@
                                         ; Do not use sub or superscripts - I currently don't need this functionality in my documents
 (setq org-export-with-sub-superscripts nil)
 
-;(setq org-export-html-style-extra "<link rel=\"stylesheet\" href=\"www./org.css\" type=\"text/css\" />")
 (setq org-export-html-style-include-default nil)
                                         ; Do not generate internal css formatting for HTML exports
 (setq org-export-htmlize-output-type (quote css))
@@ -34,32 +30,32 @@
 
 (setq org-publish-project-alist
       '(("org-doc-base"
-         :base-directory "~/.emacs.d/org-doc/"
+         :base-directory "~/.emacs.d/orgdoc/"
                                         ;:publishing-directory "/ssh:www-data@www:~/www.norang.ca/htdocs/tmp"
-         :publishing-directory "~/.emacs.d/org-doc-public"
+         :publishing-directory "~/.emacs.d/public/orgdoc"
          :recursive nil
          :base-extension "org"
          :html-preamble t
-         :email-info t
          :table-of-contents nil
+         :section-numbers nil
          :link-home "index.html"
-         :infojs-opt "toc:t ltoc:t mouse:underline  path:http://orgmode.org/org-info.js"
+;         :infojs-opt "toc:t ltoc:t mouse:underline  path:http://orgmode.org/org-info.js"
          :publishing-function org-publish-org-to-html
          :publishing-function (org-publish-org-to-html org-publish-org-to-org)
          :style-include-default nil
-         :style "<link rel=\"stylesheet\" href=\"org.css\" type=\"text/css\"/>"
+         :style "<link rel=\"stylesheet\" href=\"css/default.css\" type=\"text/css\"/>"
          :auto-sitemap t
          :sitemap-filename "index.html"
          :sitemap-title "Haisheng Docs"
          :sitemap-style "tree"
          )
         ("org-doc-extra"
-         :base-directory "~/.emacs.d/org-doc/"
+         :base-directory "~/.emacs.d/orgdoc/"
                                         ;:publishing-directory "/ssh:www-data@www:~/www.norang.ca/htdocs/tmp"
-         :publishing-directory "~/.emacs.d/org-doc-public"
+         :publishing-directory "~/.emacs.d/public/orgdoc"
          :base-extension "css\\|pdf\\|png\\|jpg\\|gif"
          :publishing-function org-publish-attachment
-         :recursive nil
+         :recursive t
          :author nil)
         ("org-doc"
          :components ("org-doc-base" "org-doc-extra"))
