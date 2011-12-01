@@ -60,8 +60,8 @@
         ("org-doc"
          :components ("org-doc-base" "org-doc-extra"))
         ("daily-base"
-         :base-directory "~/haskell/haisheng-homepage/daily/"
-         :publishing-directory "~/.emacs.d/public/daily/"
+         :base-directory "~/.emacs.d/orgdaily/"
+         :publishing-directory "~/.emacs.d/public/orgdaily/"
          :recursive t
          :base-extension "org"
          :html-preamble t
@@ -78,15 +78,36 @@
          :sitemap-style "tree"
          )
         ("daily-extra"
-         :base-directory "~/.emacs.d/orgdoc/"
-         :publishing-directory "~/.emacs.d/public/daily"
+         :base-directory "~/.emacs.d/orgdaily/"
+         :publishing-directory "~/.emacs.d/public/orgdaily"
          :base-extension "css\\|pdf\\|png\\|jpg\\|gif"
          :publishing-function org-publish-attachment
          :recursive t
          :author nil)
         ("daily"
          :components ("daily-base" "daily-extra"))
-        ))
+        ("home-base"
+         :base-directory "~/.emacs.d/orghome"
+         :publishing-directory "~/.emacs.d/public/orghome/"
+         :recursive t
+         :base-extension "org"
+         :html-preamble t
+         :table-of-contents nil
+         :section-numbers nil
+         :publishing-function org-publish-org-to-html
+         :style-include-default nil
+         :style "<link rel=\"stylesheet\" href=\"css/default.css\" type=\"text/css\"/>"
+         :auto-sitemap nil
+         )
+        ("home-extra"
+         :base-directory "~/.emacs.d/orghome/"
+         :publishing-directory "~/.emacs.d/public/orghome"
+         :base-extension "css\\|pdf\\|png\\|jpg\\|gif"
+         :publishing-function org-publish-attachment
+         :recursive t
+         :author nil)
+        ("home"
+         :components ("home-base" "home-extra"))))
 
 (setq org-ditaa-jar-path "/home/simon/.emacs.d/org-7.7/contrib/scripts/ditaa.jar")
 (setq org-plantuml-jar-path "/home/simon/.emacs.d/org-7.7/plantuml.jar")
