@@ -81,7 +81,6 @@
 ;; match brackets, equals % in VIM          forward-sexp / backward-sexp : C-M-f / C-M-b
 ;; fill paragraphs             M-q
 ;; fill region
-;; occurs                      M-x occur ; M-s o
 ;; set-default-font and use TAB to get font list
 ;; delete-matching-lines
 ;; delete-non-matching-lines
@@ -96,6 +95,15 @@
 ;; M-x customize-face
 ;; M-x list-colors-display
 ;; buffer-menu                 C-x C-b
+
+;; align-regexp
+;; occurs                      M-x occur ; M-s o
+;; butterfly ??
+;; re-builder
+;; rgrep
+;; follow-mode
+;; move point 3 words forward: hold down Meta and type 3f.  
+;; Let you go through all the history of copy and paste.    C-y M-y
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ELISP
 
