@@ -43,7 +43,7 @@
          :publishing-function org-publish-org-to-html
          :publishing-function (org-publish-org-to-html org-publish-org-to-org)
          :style-include-default nil
-         :style "<link rel=\"stylesheet\" href=\"css/default.css\" type=\"text/css\"/>"
+         :style "<link rel=\"stylesheet\" href=\"/css/default.css\" type=\"text/css\"/>"
          :auto-sitemap t
          :sitemap-filename "index.html"
          :sitemap-title "Haisheng Docs"
@@ -71,7 +71,7 @@
          :publishing-function org-publish-org-to-html
          :publishing-function (org-publish-org-to-html org-publish-org-to-org)
          :style-include-default nil
-         :style "<link rel=\"stylesheet\" href=\"css/default.css\" type=\"text/css\"/>"
+         :style "<link rel=\"stylesheet\" href=\"http://haisgwu.info/css/default.css\" type=\"text/css\"/>"
          :auto-sitemap t
          :sitemap-filename "index.html"
          :sitemap-title "Haisheng Daily"
