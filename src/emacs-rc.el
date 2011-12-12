@@ -81,8 +81,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Global key-bindings
+(global-set-key [f5] 'occur)
 (global-set-key [f11] 'longlines-mode)
-(global-set-key [f8] 'menu-bar-mode)
+(global-set-key [f12] 'menu-bar-mode)
 (global-set-key "\M-]" 'other-window)
 (global-set-key "\M-[" '(lambda () (interactive) (other-window -1)))
 (global-set-key [?\C-x?\C-b] 'bs-show)
