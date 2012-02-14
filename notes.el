@@ -104,6 +104,8 @@
 ;; follow-mode
 ;; move point 3 words forward: hold down Meta and type 3f.  
 ;; Let you go through all the history of copy and paste.    C-y M-y
+;;
+;; delete-trailing-whitespace
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ELISP
 
