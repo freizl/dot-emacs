@@ -8,7 +8,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "C:\\Program Files\\Mozilla Firefox\\firefox.exe")
+      browse-url-generic-program "C:\\Users\\haiswu\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe")
+;;      browse-url-generic-program "C:\\Program Files\\Mozilla Firefox\\firefox.exe")
       ;;c:\\workspace\\opt\\xulrunner\\xulrunner.exe"
       ;;browse-url-generic-args '("C:\\workspace\\opt\\conkeror\\application.ini"))
 
