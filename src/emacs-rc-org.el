@@ -2,8 +2,8 @@
 ;;;; Org-Mode Setting
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(add-to-list 'load-path "~/.emacs.d/org-7.7/lisp")
-(add-to-list 'load-path "~/.emacs.d/org-7.7/contrib/lisp")
+(add-to-list 'load-path "~/.emacs.d/orgmode/lisp")
+(add-to-list 'load-path "~/.emacs.d/orgmode/contrib/lisp")
 
 (require 'org-install)
 
