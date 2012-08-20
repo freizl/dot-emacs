@@ -1,4 +1,3 @@
-
 (defun window-nt-special ()
   (message "load windows-nt special conf")
   (load (concat src-dir "emacs-rc-win")))

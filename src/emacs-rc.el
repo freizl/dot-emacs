@@ -124,6 +124,7 @@
 (add-to-list 'auto-mode-alist '("\\.as$" . c-mode))
 (add-to-list 'auto-mode-alist '("README" . text-mode))
 (add-to-list 'auto-mode-alist '("\\.xml$" . nxml-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl$" . nxml-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Color
