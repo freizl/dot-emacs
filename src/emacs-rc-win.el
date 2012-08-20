@@ -25,7 +25,7 @@
 ;(setq tramp-default-user "swu"
 ;     tramp-default-host "dev-01.com")
 
-;;; altertive approach as /$c3dev~
-;(setenv "c3dev" "/ssh:swu@dev-01.com:")
+;;; altertive approach as /$a3dev~
+;(setenv "a3dev" "/ssh:swu@dev-01.com:")
 
 (shell)

@@ -19,8 +19,9 @@
 (add-to-list 'load-path depends-dir)
 (load (concat src-dir "emacs-rc"))
 (load (concat src-dir "emacs-rc-program"))
-(load (concat src-dir "emacs-rc-org"))
 (platform-special)
 
 (message "Loading my emacs conf DONE")
+
+;;;(load (concat src-dir "emacs-rc-org"))
 

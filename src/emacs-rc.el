@@ -10,6 +10,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(auto-fill-mode t)
+ '(custom-enabled-themes (quote (manoj-dark)))
  '(blink-cursor-mode nil)
  '(column-number-mode 1)
  '(display-time-day-and-date t)
@@ -127,9 +128,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Color
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'color-theme)
-(setq color-theme-is-global t)
+;(require 'color-theme)
+;(setq color-theme-is-global t)
 ;(color-theme-robin-hood)
-(color-theme-dark-laptop)
+;(color-theme-dark-laptop)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
