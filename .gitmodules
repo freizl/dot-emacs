@@ -4,3 +4,9 @@
 [submodule "depends/markdown-mode"]
 	path = depends/markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
+[submodule "depends/haskell-mode"]
+	path = depends/haskell-mode
+	url = https://github.com/haskell/haskell-mode.git
+[submodule "depends/jade-mode"]
+	path = depends/jade-mode
+	url = https://github.com/brianc/jade-mode.git
