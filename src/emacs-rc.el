@@ -86,6 +86,8 @@
 (global-set-key [f6] 'browse-url)
 (global-set-key [f7] 'linum-mode)
 (global-set-key [C-f7] 'global-linum-mode)
+(global-set-key [f9] 'longlines-mode)
+>>>>>>> f71c1df0270a5ef7a77220d41d67c7cfd3c5a6d0
 (global-set-key [f11] 'toggle-truncate-lines)
 (global-set-key [f12] 'longlines-mode)
 (global-set-key "\M-]" 'other-window)
@@ -131,6 +133,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Color
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;(require 'color-theme)
 ;(setq color-theme-is-global t)
 ;(color-theme-robin-hood)

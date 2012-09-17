@@ -12,10 +12,11 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; haskell mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(load (concat depends-dir "haskellmode-emacs/haskell-site-file"))
+(load (concat depends-dir "haskell-mode/haskell-site-file"))
 (require 'haskell-mode)
 (require 'inf-haskell)
 (require 'hs-lint)
+(setq hs-lint-command "~/.cabal/bin/hlint")
 (defun my-haskell-mode-hook ()
    (local-set-key "\C-cl" 'hs-lint))
 (add-hook 'haskell-mode-hook 'my-haskell-mode-hook)
@@ -65,5 +66,17 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (add-to-list 'load-path (concat depends-dir "markdown-mode"))
 (autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
+(setq markdown-command "~/.cabal/bin/pandoc")
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Jade
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defvar jade-depend (concat depends-dir "jade-mode"))
+
+(add-to-list 'load-path jade-depend)
+(require 'sws-mode)
+(require 'jade-mode)    
+(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))

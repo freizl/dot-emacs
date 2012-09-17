@@ -9,3 +9,10 @@ my .emacs configuration
   3. [ ] https://github.com/capitaomorte/yasnippet
   4. [ ] el-get
 
+## for git
+
+~~~~~
+git submodule add <url> <local-path>
+git submodule init
+git submodule update
+~~~~~
