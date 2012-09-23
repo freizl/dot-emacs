@@ -34,6 +34,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Macro
 ;; Save macro                  name-last-kbd-macro ; then insert-kbd-macro
 ;; call macro                  call-last-kbd-macro (C-x e)
+;; plays macro util rings the bell, C-u 0 C-x e
 
 ;;;;;;;;;;;;; Search
 ;; C-s C-w
@@ -140,4 +141,4 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Others
 ; hi-lock-mode
-
+; follow-mode !!
