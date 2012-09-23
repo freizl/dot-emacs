@@ -11,7 +11,7 @@
   ;; If there is more than one, they won't work right.
  '(auto-fill-mode t)
  '(custom-enabled-themes (quote (manoj-dark)))
- '(blink-cursor-mode nil)
+ ;;'(blink-cursor-mode nil)
  '(column-number-mode 1)
  '(display-time-day-and-date t)
  '(line-number-mode 1)
@@ -27,7 +27,7 @@
  '(tool-bar-mode nil)
  '(transient-mark-mode t)
  '(inhibit-startup-screen t)
-; '(split-width-threshold nil)         ;; old emacs style split
+ '(split-width-threshold nil)         ;; old emacs style split
  '(dired-listing-switches' "-l")
  '(delete-by-moving-to-trash t)
  '(org-log-done (quote time))
@@ -82,10 +82,11 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Global key-bindings
-(global-set-key [f5] 'occur)
+;(global-set-key [f5] 'occur)
+(global-set-key [f5] 'speedbar)
 (global-set-key [f6] 'browse-url)
 (global-set-key [f7] 'linum-mode)
-(global-set-key [C-f7] 'global-linum-mode)
+(global-set-key [S-f7] 'global-linum-mode)
 (global-set-key [f11] 'toggle-truncate-lines)
 (global-set-key [f12] 'longlines-mode)
 (global-set-key "\M-]" 'other-window)

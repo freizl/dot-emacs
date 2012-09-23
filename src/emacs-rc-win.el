@@ -28,4 +28,7 @@
 ;;; altertive approach as /$a3dev~
 ;(setenv "a3dev" "/ssh:swu@dev-01.com:")
 
+(global-set-key [C-f7] 'set-mark-command)
+
 (shell)
+
