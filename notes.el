@@ -137,3 +137,7 @@
 ;; 8.9 Cursor Position
 ;; 8.11 Repeat a Command C-x z
 ;; 9.3 Completion        SPC, TAB
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Others
+; hi-lock-mode
+
