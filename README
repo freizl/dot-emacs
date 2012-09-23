@@ -1,6 +1,6 @@
-my .emacs configuration
+.emacs configuration
 
-* TODO
+## TODO
   1. [X] Elegant separate config for win/linux
      - define var for path config
      - if var defined, then load...
@@ -10,7 +10,7 @@ my .emacs configuration
   4. [ ] el-get
 
 ## for git
-
+   
 ~~~~~
 git submodule add <url> <local-path>
 git submodule init

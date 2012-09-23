@@ -34,6 +34,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Macro
 ;; Save macro                  name-last-kbd-macro ; then insert-kbd-macro
 ;; call macro                  call-last-kbd-macro (C-x e)
+;; plays macro util rings the bell, C-u 0 C-x e
 
 ;;;;;;;;;;;;; Search
 ;; C-s C-w
@@ -137,3 +138,7 @@
 ;; 8.9 Cursor Position
 ;; 8.11 Repeat a Command C-x z
 ;; 9.3 Completion        SPC, TAB
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Others
+; hi-lock-mode
+; follow-mode !!

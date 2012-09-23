@@ -88,3 +88,7 @@
 (defun node-shell ()
   (interactive)
   (pop-to-buffer (make-comint "Node Shell" "node" nil (concat depends-dir "\\nodejs\\node-in-node.js"))))
+;;; magit
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-to-list 'load-path (concat depends-dir "magit"))
+(require 'magit)
