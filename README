@@ -16,3 +16,6 @@ git submodule add <url> <local-path>
 git submodule init
 git submodule update
 ~~~~~
+
+## deprecated
+ - https://github.com/xwl/twittering-mode.git
