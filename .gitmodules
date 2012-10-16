@@ -1,6 +1,3 @@
-[submodule "depends/twittering-mode-cn"]
-	path = depends/twittering-mode-cn
-	url = https://github.com/xwl/twittering-mode.git
 [submodule "depends/markdown-mode"]
 	path = depends/markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
