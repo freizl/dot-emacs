@@ -1,4 +1,14 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; auto-complet
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-to-list 'load-path (concat depends-dir "auto-complete"))
+(add-to-list 'ac-dictionary-directories (concat depends-dir "auto-complete/dict"))
+(require 'auto-complete-config)
+(ac-config-default)
+(setq ac-auto-start nil)
+(define-key ac-mode-map "\M-/" 'auto-complete)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; tidy
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (autoload 'tidy-buffer "tidy" "Run Tidy HTML parser on current buffer" t)

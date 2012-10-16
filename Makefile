@@ -1,16 +1,14 @@
 
-##################
-### Compile JS2.el
-### 1. open emacs without any config `emacn -q`
-### 2. open js2.el
-### 3. byte-compile-file
-###
-### command line (does not work for me)
-### emacs -q --batch --eval  '(byte-compile-file "js2.el")'
-###
-##################
+DDIR=depends
 
 init-depends:
 	git submodule init
 	git submodule update
 
+build:
+	echo "byte complie js2 mode and auto-complet"
+	emacs -Q -L depends/ -batch -f batch-byte-compile depends/js2.el
+	cd $(DDIR)/auto-complete && make byte-compile
+
+install:
+	echo "(load-file ~/git/dot-emacs/dotemacs" >> ~/.emacs
