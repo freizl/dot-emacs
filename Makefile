@@ -7,7 +7,7 @@ init-depends:
 
 build:
 	echo "byte complie js2 mode and auto-complet"
-	emacs -Q -L depends/ -batch -f batch-byte-compile depends/js2.el
+	emacs -Q -L $(DDIR)/ -batch -f batch-byte-compile $(DDIR)/js2.el
 	cd $(DDIR)/auto-complete && make byte-compile
 
 install:
