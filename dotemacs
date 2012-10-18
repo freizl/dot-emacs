@@ -1,10 +1,3 @@
-(defun window-nt-special ()
-  (message "load windows-nt special conf")
-  (load (concat src-dir "emacs-rc-win")))
-
-(defun platform-special ()
-  (cond ((eq system-type 'windows-nt)
-         (window-nt-special))))
   
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; load predefined
@@ -18,9 +11,16 @@
 (add-to-list 'load-path depends-dir)
 (load (concat src-dir "emacs-rc"))
 (load (concat src-dir "emacs-rc-program"))
+
+(defun window-nt-special ()
+  (message "load windows-nt special conf")
+  (load (concat src-dir "emacs-rc-win")))
+
+(defun platform-special ()
+  (cond ((eq system-type 'windows-nt)
+         (window-nt-special))))
+
 (platform-special)
 
 (message "Loading my emacs conf DONE")
-
-;;;(load (concat src-dir "emacs-rc-org"))
 

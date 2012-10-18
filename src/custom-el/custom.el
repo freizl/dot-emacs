@@ -39,6 +39,10 @@
   (move-beginning-of-line 1)
  ; (let ((first-char (string (delete-char 1)))
 )
+(defun jira (id)
+  "open jira ticket"
+  (interactive "sid: ")
+  (browse-url (format "/path/to/browse/%s" id)))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
