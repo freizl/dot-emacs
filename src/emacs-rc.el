@@ -15,6 +15,7 @@
  '(column-number-mode 1)
  '(display-time-day-and-date t)
  '(line-number-mode 1)
+ '(line-move-visual nil)
  '(longlines-auto-wrap 1)
  '(longlines-show-hard-newlines t)
  '(longlines-wrap-follows-window-size 1)
@@ -27,12 +28,13 @@
  '(tool-bar-mode nil)
  '(transient-mark-mode t)
  '(inhibit-startup-screen t)
- '(split-width-threshold nil)         ;; old emacs style split
+ ;;'(split-width-threshold nil)         ;; old emacs style split
  '(dired-listing-switches' "-l")
  '(delete-by-moving-to-trash t)
  '(org-log-done (quote time))
  '(org-special-ctrl-a/e t)
  '(kill-whole-line t)
+ '(global-hl-line-mode t)
  '(mouse-drag-copy-region nil)  ; stops selection with a mouse being immediately injected to the kill ring
  '(x-select-enable-primary nil)  ; stops killing/yanking interacting with primary X11 selection
  '(x-select-enable-clipboard t))  ; makes killing/yanking interact with clipboard X11 selection

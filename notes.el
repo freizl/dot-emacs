@@ -142,3 +142,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Others
 ; hi-lock-mode
 ; follow-mode !!
+; ioccur
+; whitespace
+; adaptive-wrap-prefix-mode
+; hl-line
+; mouse-avoidance-mode
+; nlinum-mode
