@@ -148,3 +148,4 @@
 ; hl-line
 ; mouse-avoidance-mode
 ; nlinum-mode
+; memory-usage

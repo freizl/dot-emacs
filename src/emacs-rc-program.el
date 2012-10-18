@@ -46,8 +46,8 @@
                            (hs-minor-mode t)))
 (setq js2-basic-offset 3)
 (setq js2-cleanup-whitespace t)
-;(setq js2-enter-indents-newline nil)
-;(setq js2-indent-on-enter-key nil)
+(setq js2-enter-indents-newline nil)
+(setq js2-indent-on-enter-key nil)
 (global-set-key [f8] 'hs-toggle-hiding)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

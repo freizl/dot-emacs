@@ -35,6 +35,8 @@
  '(org-special-ctrl-a/e t)
  '(kill-whole-line t)
  '(global-hl-line-mode t)
+ '(global-hi-lock-mode 1)
+ '(mouse-avoidance-mode 'animate)
  '(mouse-drag-copy-region nil)  ; stops selection with a mouse being immediately injected to the kill ring
  '(x-select-enable-primary nil)  ; stops killing/yanking interacting with primary X11 selection
  '(x-select-enable-clipboard t))  ; makes killing/yanking interact with clipboard X11 selection
@@ -94,6 +96,8 @@
 (global-set-key "\M-]" 'other-window)
 (global-set-key "\M-[" '(lambda () (interactive) (other-window -1)))
 (global-set-key [?\C-x?\C-b] 'bs-show)
+(global-set-key [\C-next] 'next-buffer)
+(global-set-key [\C-prior] 'previous-buffer)
 
 (define-key global-map "\C-h" 'backward-delete-char)
 (define-key global-map "\C-_" 'help-command)
@@ -132,7 +136,7 @@
 (add-to-list 'auto-mode-alist '("\\.tpl$" . nxml-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; Color
+;;; Color
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;(require 'color-theme)
@@ -140,4 +144,10 @@
 ;(color-theme-robin-hood)
 ;(color-theme-dark-laptop)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Custom func
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun gg (content)
+  "googling"
+  (interactive "scontent: ")
+  (browse-url (format "https://www.google.com/search?q=%s" content)))
