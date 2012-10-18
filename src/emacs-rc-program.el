@@ -51,16 +51,6 @@
 (global-set-key [f8] 'hs-toggle-hiding)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; JS-mode
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;(add-hook 'js-mode-hook
-;          (lambda ()
-;            ;; Scan the file for nested code blocks
-;            (imenu-add-menubar-index)
-;            ;; Activate the folding mode
-;            (hs-minor-mode t)))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; flymake
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; FIXME: more about config
@@ -95,10 +85,35 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; NodeJS
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defun node-shell ()
-  (interactive)
-  (pop-to-buffer (make-comint "Node Shell" "node" nil (concat depends-dir "\\nodejs\\node-in-node.js"))))
+;;(defun node-shell ()
+;;  (interactive)
+;;  (pop-to-buffer (make-comint "Node Shell" "node" nil (concat depends-dir "\\nodejs\\node-in-node.js"))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; magit
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (add-to-list 'load-path (concat depends-dir "magit"))
 (require 'magit)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; yasnippet
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq yasdir (concat depends-dir "yasnippet"))
+;(setq ds1 (concat yasdir "/snippets"))
+;(setq ds2 (concat yasdir "/extras/imported"))
+
+(add-to-list 'load-path yasdir)
+(require 'yasnippet)
+(let ((ds1 (concat yasdir "/snippets"))
+      (ds2 (concat yasdir "/extras/imported")))
+  (setq yas-snippet-dirs (list ds1 ds2)))
+
+(yas-global-mode 1)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; scala
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; http://lampsvn.epfl.ch/svn-repos/scala/scala-tool-support/trunk/src/emacs/
+(add-to-list 'load-path (concat depends-dir "/scala-mode"))
+(require 'scala-mode-auto)
+(add-hook 'scala-mode-hook '(lambda () (yas/minor-mode-on)))

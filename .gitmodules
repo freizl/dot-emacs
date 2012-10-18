@@ -7,3 +7,6 @@
 [submodule "depends/jade-mode"]
 	path = depends/jade-mode
 	url = https://github.com/brianc/jade-mode.git
+[submodule "depends/yasnippet"]
+	path = depends/yasnippet
+	url = https://github.com/capitaomorte/yasnippet.git
