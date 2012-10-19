@@ -99,14 +99,13 @@
 ;;; yasnippet
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (setq yasdir (concat depends-dir "yasnippet"))
-;(setq ds1 (concat yasdir "/snippets"))
-;(setq ds2 (concat yasdir "/extras/imported"))
 
 (add-to-list 'load-path yasdir)
 (require 'yasnippet)
 (let ((ds1 (concat yasdir "/snippets"))
-      (ds2 (concat yasdir "/extras/imported")))
-  (setq yas-snippet-dirs (list ds1 ds2)))
+      (ds2 (concat yasdir "/extras/imported"))
+      (ds3 (concat depends-dir "/yasnippet-snippets")))
+  (setq yas-snippet-dirs (list ds1 ds2 ds3)))
 
 (yas-global-mode 1)
 

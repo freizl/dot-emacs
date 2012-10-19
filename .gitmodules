@@ -10,3 +10,6 @@
 [submodule "depends/yasnippet"]
 	path = depends/yasnippet
 	url = https://github.com/capitaomorte/yasnippet.git
+[submodule "depends/yasnippet-snippets/js2-mode"]
+	path = depends/yasnippet-snippets/js2-mode
+	url = https://github.com/NodeWork/js-yasnippets.git
