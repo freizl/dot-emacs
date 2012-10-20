@@ -29,4 +29,4 @@ init-depends:
 	git submodule update
 
 install:
-	echo "(load-file ~/git/dot-emacs/dotemacs" >> ~/.emacs
+	echo "(load-file \"~/git/dot-emacs/dotemacs\")" >> ~/.emacs
