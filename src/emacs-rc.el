@@ -11,7 +11,6 @@
   ;; If there is more than one, they won't work right.
  '(auto-fill-mode t)
  '(custom-enabled-themes (quote (manoj-dark)))
- ;;'(blink-cursor-mode nil)
  '(column-number-mode 1)
  '(display-time-day-and-date t)
  '(line-number-mode 1)
@@ -28,7 +27,6 @@
  '(tool-bar-mode nil)
  '(transient-mark-mode t)
  '(inhibit-startup-screen t)
- ;;'(split-width-threshold nil)         ;; old emacs style split
  '(dired-listing-switches' "-l")
  '(delete-by-moving-to-trash t)
  '(org-log-done (quote time))
@@ -37,6 +35,9 @@
  '(global-hl-line-mode t)
  '(global-hi-lock-mode 1)
  '(mouse-avoidance-mode 'animate)
+ '(ido-mode t)
+ ;;'(blink-cursor-mode nil)
+ '(split-width-threshold 120)         ;; old emacs style split
  '(mouse-drag-copy-region nil)  ; stops selection with a mouse being immediately injected to the kill ring
  '(x-select-enable-primary nil)  ; stops killing/yanking interacting with primary X11 selection
  '(x-select-enable-clipboard t))  ; makes killing/yanking interact with clipboard X11 selection
