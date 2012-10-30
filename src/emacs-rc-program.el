@@ -7,6 +7,8 @@
 (ac-config-default)
 (setq ac-auto-start nil)
 (define-key ac-mode-map "\M-/" 'auto-complete)
+(add-to-list 'ac-modes 'haskell-mode)
+(add-to-list 'ac-modes 'js2-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; tidy
