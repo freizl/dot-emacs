@@ -30,5 +30,8 @@
 
 (global-set-key [C-f7] 'set-mark-command)
 
+;;; yas
+(setq yas-prompt-functions '(yas-dropdown-prompt yas-ido-prompt))
+
 (shell)
 
