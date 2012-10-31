@@ -142,10 +142,11 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Others
 ; hi-lock-mode
 ; follow-mode !!
-; ioccur
+; ioccur      C-up / C-down / Return
 ; whitespace
 ; adaptive-wrap-prefix-mode
 ; hl-line
 ; mouse-avoidance-mode
 ; nlinum-mode
 ; memory-usage
+; all

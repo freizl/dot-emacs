@@ -43,14 +43,24 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (autoload 'js2-mode "js2" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-(add-to-list 'auto-mode-alist '("\\.json$" . js2-mode))
-(add-hook 'js2-mode-hook (lambda ()
-                           (hs-minor-mode t)))
+(add-to-list 'auto-mode-alist '("\\.json$" . js-mode))
+(add-hook 'js2-mode-hook (lambda () (hs-minor-mode t)))
 (setq js2-basic-offset 3)
 (setq js2-cleanup-whitespace t)
 (setq js2-enter-indents-newline nil)
 (setq js2-indent-on-enter-key nil)
 (global-set-key [f8] 'hs-toggle-hiding)
+
+(require 'js-comint)
+(setq inferior-js-program-command "node")
+(defun jscomint-to-js2mode-keys () 
+  (local-set-key "\C-c\C-e" 'js-send-last-sexp)
+  (local-set-key "\C-cr" 'js-send-region)
+  (local-set-key "\C-c\C-r" 'js-send-region-and-go)
+  (local-set-key "\C-cb" 'js-send-buffer)
+  (local-set-key "\C-c\C-b" 'js-send-buffer-and-go))
+  
+(add-hook 'js2-mode-hook 'jscomint-to-js2mode-keys)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; flymake
@@ -84,12 +94,6 @@
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; NodeJS
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;(defun node-shell ()
-;;  (interactive)
-;;  (pop-to-buffer (make-comint "Node Shell" "node" nil (concat depends-dir "\\nodejs\\node-in-node.js"))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; magit

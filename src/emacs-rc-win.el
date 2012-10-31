@@ -33,5 +33,8 @@
 ;;; yas
 (setq yas-prompt-functions '(yas-dropdown-prompt yas-ido-prompt))
 
+;;; js-comint
+(setq inferior-js-program-command "java -jar C:/Users/haiswu/Downloads/rhino1_7R4/js.jar")
+
 (shell)
 
