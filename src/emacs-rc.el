@@ -5,10 +5,8 @@
 
 (require 'paren)
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;;'(iswitchb-mode t)
+ ;;'(blink-cursor-mode nil)
  '(auto-fill-mode t)
  '(custom-enabled-themes (quote (manoj-dark)))
  '(column-number-mode 1)
@@ -36,11 +34,10 @@
  '(global-hi-lock-mode 1)
  '(mouse-avoidance-mode 'animate)
  '(ido-mode t)
- ;;'(blink-cursor-mode nil)
- '(split-width-threshold 120)         ;; old emacs style split
- '(mouse-drag-copy-region nil)  ; stops selection with a mouse being immediately injected to the kill ring
- '(x-select-enable-primary nil)  ; stops killing/yanking interacting with primary X11 selection
- '(x-select-enable-clipboard t))  ; makes killing/yanking interact with clipboard X11 selection
+ '(split-width-threshold 120)     ;; old emacs style split
+ '(mouse-drag-copy-region nil)    ;; stops selection with a mouse being immediately injected to the kill ring
+ '(x-select-enable-primary nil)   ;; stops killing/yanking interacting with primary X11 selection
+ '(x-select-enable-clipboard t))  ;; makes killing/yanking interact with clipboard X11 selection
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; miscs
@@ -56,7 +53,6 @@
 (when (fboundp 'global-font-lock-mode) (global-font-lock-mode t))
 (when (fboundp 'global-auto-revert-mode) (global-auto-revert-mode t))
 
-(iswitchb-mode 1)
 (display-time)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

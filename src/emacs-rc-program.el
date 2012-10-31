@@ -52,7 +52,7 @@
 (global-set-key [f8] 'hs-toggle-hiding)
 
 (require 'js-comint)
-(setq inferior-js-program-command "node")
+(setq inferior-js-program-command "rhino")
 (defun jscomint-to-js2mode-keys () 
   (local-set-key "\C-c\C-e" 'js-send-last-sexp)
   (local-set-key "\C-cr" 'js-send-region)
