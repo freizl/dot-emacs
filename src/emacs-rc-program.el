@@ -122,3 +122,9 @@
 (add-to-list 'load-path (concat depends-dir "/scala-mode"))
 (require 'scala-mode-auto)
 (add-hook 'scala-mode-hook '(lambda () (yas/minor-mode-on)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; mustache-mode
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'mustache-mode)
+
