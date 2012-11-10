@@ -114,6 +114,7 @@
   (setq yas-snippet-dirs (list ds1 ds2 ds3)))
 
 (yas-global-mode 1)
+(setq yas-prompt-functions '(yas-dropdown-prompt yas-ido-prompt))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; scala
