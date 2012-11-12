@@ -140,7 +140,7 @@
 ;; 9.3 Completion        SPC, TAB
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Others
-; hi-lock-mode
+; hi-lock-mode       c-x w h, c-x w p, c-x w r, c-x w l, etc
 ; follow-mode !!
 ; ioccur      C-up / C-down / Return
 ; whitespace
