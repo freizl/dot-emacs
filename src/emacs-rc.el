@@ -55,6 +55,10 @@
 
 (display-time)
 
+(add-to-list 'load-path (concat depends-dir "golden-ratio"))
+(require 'golden-ratio)
+(golden-ratio-enable)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; backup and auto-saves
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -13,3 +13,6 @@
 [submodule "depends/yasnippet-snippets/js2-mode"]
 	path = depends/yasnippet-snippets/js2-mode
 	url = https://github.com/NodeWork/js-yasnippets.git
+[submodule "depends/golden-ratio"]
+	path = depends/golden-ratio
+	url = https://github.com/roman/golden-ratio.el.git
