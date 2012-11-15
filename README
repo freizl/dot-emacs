@@ -6,8 +6,9 @@
      - if var defined, then load...
   2. [X]  put all depends into this dir;
           load those dpends via relative path rather than absolute path
-  3. [ ] https://github.com/capitaomorte/yasnippet
+  3. [X] https://github.com/capitaomorte/yasnippet
   4. [ ] el-get
+  5. [ ] refactoring init scripts as package. (`provide`, `require`)
 
 ## for git
    
