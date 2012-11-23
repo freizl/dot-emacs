@@ -7,6 +7,7 @@
 (custom-set-variables
  ;;'(iswitchb-mode t)
  ;;'(blink-cursor-mode nil)
+ ;;'(global-hi-lock-mode 1)
  '(auto-fill-mode t)
  '(custom-enabled-themes (quote (manoj-dark)))
  '(column-number-mode 1)
@@ -30,8 +31,6 @@
  '(org-log-done (quote time))
  '(org-special-ctrl-a/e t)
  '(kill-whole-line t)
- '(global-hl-line-mode t)
- '(global-hi-lock-mode 1)
  '(mouse-avoidance-mode 'animate)
  '(ido-mode t)
  '(split-width-threshold 120)     ;; old emacs style split
