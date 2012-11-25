@@ -150,3 +150,4 @@
 ; nlinum-mode
 ; memory-usage
 ; all
+; winner-mode, winner-undo, restore windows config after c-x 1

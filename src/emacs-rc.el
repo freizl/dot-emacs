@@ -33,6 +33,7 @@
  '(kill-whole-line t)
  '(mouse-avoidance-mode 'animate)
  '(ido-mode t)
+ '(winner-mode t)
  '(split-width-threshold 120)     ;; old emacs style split
  '(mouse-drag-copy-region nil)    ;; stops selection with a mouse being immediately injected to the kill ring
  '(x-select-enable-primary nil)   ;; stops killing/yanking interacting with primary X11 selection
