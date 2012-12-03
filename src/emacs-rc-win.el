@@ -28,7 +28,8 @@
 ;;; altertive approach as /$a3dev~
 ;(setenv "a3dev" "/ssh:swu@dev-01.com:")
 
-(global-set-key [C-f7] 'set-mark-command)
+(global-set-key (kbd "C-c SPC") 'set-mark-command)
+(global-set-key (kbd "C-,") 'set-mark-command)
 
 ;;; js-comint
 (setq inferior-js-program-command "java -jar C:/Users/haiswu/Downloads/rhino1_7R4/js.jar")

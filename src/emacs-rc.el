@@ -7,7 +7,7 @@
 (custom-set-variables
  ;;'(iswitchb-mode t)
  ;;'(blink-cursor-mode nil)
- ;;'(global-hi-lock-mode 1)
+ '(global-hi-lock-mode 1)
  '(auto-fill-mode t)
  '(custom-enabled-themes (quote (manoj-dark)))
  '(column-number-mode 1)
@@ -88,7 +88,8 @@
 
 ; Global key-bindings
 ;(global-set-key [f5] 'occur)
-(global-set-key [f5] 'speedbar)
+;(global-set-key [f5] 'speedbar)
+(global-set-key [f5] 'call-last-kbd-macro)
 (global-set-key [f6] 'browse-url)
 (global-set-key [f7] 'linum-mode)
 (global-set-key [S-f7] 'global-linum-mode)
@@ -99,6 +100,10 @@
 (global-set-key [?\C-x?\C-b] 'bs-show)
 (global-set-key [\C-next] 'next-buffer)
 (global-set-key [\C-prior] 'previous-buffer)
+(global-set-key "\M-#" 'query-replace-regexp)
+
+(define-key global-map (kbd "C-+") 'text-scale-increase)
+(define-key global-map (kbd "C--") 'text-scale-decrease)
 
 (define-key global-map "\C-h" 'backward-delete-char)
 (define-key global-map "\C-_" 'help-command)
