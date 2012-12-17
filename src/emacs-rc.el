@@ -9,7 +9,7 @@
  ;;'(blink-cursor-mode nil)
  '(global-hi-lock-mode 1)
  '(auto-fill-mode t)
- '(custom-enabled-themes (quote (manoj-dark)))
+ '(custom-enabled-themes (quote (whiteboard))) ;; customize-themes
  '(column-number-mode 1)
  '(display-time-day-and-date t)
  '(line-number-mode 1)
