@@ -16,3 +16,6 @@
 [submodule "depends/golden-ratio"]
 	path = depends/golden-ratio
 	url = https://github.com/roman/golden-ratio.el.git
+[submodule "depends/powerline"]
+	path = depends/powerline
+	url = https://github.com/jonathanchu/emacs-powerline.git
