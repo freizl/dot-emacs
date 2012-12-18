@@ -1,3 +1,5 @@
+;;; https://sites.google.com/site/steveyegge2/effective-emacs
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; TODO
 """
 ; auto-fill-mode?, break long line at word
